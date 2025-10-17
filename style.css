@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: #5372F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+   width:690px;
+   background: #fff;
+   border-radius: 7px;
+   padding:30px;
+}
+.wrapper{
+    border-radius: 5px;
+    border:1px solid #bbb;
+}
+.wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+.text-input .to-text{
+    border-radius: 0px;
+    border-left:1px solid #bbb;
+}
+.text-input textarea{
+    height:250px;
+    width:100%;
+    border:none;
+    outline:none;
+    background: none;
+    padding:10px 15px;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding:12px 15px;
+}
+.controls .row-from .icons{
+    padding-right:15px;
+    border-right: 1px solid #bbb;
+}
+.controls .row-to .icons{
+    padding-left:20px;
+    border-left: 1px solid #bbb;
+}
+
+.controls .icons{
+    width:38%;
+}
+.controls, li, .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls .row-to select{
+    border:none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+    font-weight: bold;
+}
+.controls .row-from select{
+    border:none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+    font-weight: bold;
+
+}
+#from:active{
+   
+    color:red;
+}
+#to:active{
+    
+    color:red;
+}
+.controls .exchange{
+    color:#9f9f9f;
+    font-size: 16px;
+    cursor: pointer;
+}
+.controls .icons i{
+    width:50px;
+    color:#9f9f9f;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container button{
+    background-color: red;
+    padding:14px;
+    width:100%;
+    border:none;
+    outline: none;
+    margin-top:20px;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.container button:active{
+    background-color: black;
+    color:#fff;
+    content: " ";
+  
+}
+
+@media(max-width:1280px) and (max-width:720px){
+    .container{
+        width:100%;
+    }
+    .controls{
+        width:100%;
+        flex-direction: column;
+       
+    }
+    #exchangeIcon{
+        margin-top: 20px;
+
+    }
+     .controls .row-from{
+        margin-top: 10px;
+        border-bottom: 1px solid #bbb;
+        padding:20px;
+    }
+    .controls .row-to{
+        margin-top: 20px;
+        border-top: 1px solid #bbb;
+        padding:10px;
+    }
+    .controls .icons{
+        width:100%;
+    }
+}
