@@ -150,7 +150,7 @@ translateBtn.addEventListener("click",() =>{
     let translateTo = selectTag[1].value;
     console.log(text, translateFrom, translateTo);
 
-    let api_url = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
+    let api_url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${translateFrom}|${translateTo}`;
 
     async function getText(api_url) {
         const response = await fetch (api_url);
